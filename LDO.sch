@@ -1,0 +1,171 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:conn
+LIBS:tp4056
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L XC6206 X1
+U 1 1 5B2DEEE8
+P 5150 3250
+F 0 "X1" H 4950 3600 60  0000 C CNN
+F 1 "XC6206" H 5300 3600 60  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 4550 3600 60  0001 C CNN
+F 3 "" H 4550 3600 60  0001 C CNN
+	1    5150 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 5B2DEF4D
+P 5750 3800
+F 0 "#PWR01" H 5750 3550 50  0001 C CNN
+F 1 "GND" H 5750 3650 50  0000 C CNN
+F 2 "" H 5750 3800 50  0001 C CNN
+F 3 "" H 5750 3800 50  0001 C CNN
+	1    5750 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 3400 5750 3400
+Wire Wire Line
+	5750 3400 5750 3800
+$Comp
+L C CIn1
+U 1 1 5B2DEF8A
+P 4400 3600
+F 0 "CIn1" H 4425 3700 50  0000 L CNN
+F 1 "1uF" H 4425 3500 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4438 3450 50  0001 C CNN
+F 3 "" H 4400 3600 50  0001 C CNN
+	1    4400 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L C CL1
+U 1 1 5B2DEFB5
+P 6250 3450
+F 0 "CL1" H 6275 3550 50  0000 L CNN
+F 1 "1uF" H 6275 3350 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6288 3300 50  0001 C CNN
+F 3 "" H 6250 3450 50  0001 C CNN
+	1    6250 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 3250 4750 3250
+Wire Wire Line
+	4400 3250 4400 3450
+Wire Wire Line
+	5550 3100 7200 3100
+Wire Wire Line
+	6250 3100 6250 3300
+$Comp
+L GND #PWR02
+U 1 1 5B2DF053
+P 6250 3800
+F 0 "#PWR02" H 6250 3550 50  0001 C CNN
+F 1 "GND" H 6250 3650 50  0000 C CNN
+F 2 "" H 6250 3800 50  0001 C CNN
+F 3 "" H 6250 3800 50  0001 C CNN
+	1    6250 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 5B2DF06D
+P 4400 3800
+F 0 "#PWR03" H 4400 3550 50  0001 C CNN
+F 1 "GND" H 4400 3650 50  0000 C CNN
+F 2 "" H 4400 3800 50  0001 C CNN
+F 3 "" H 4400 3800 50  0001 C CNN
+	1    4400 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 3600 6250 3800
+Wire Wire Line
+	4400 3750 4400 3800
+$Comp
+L Conn_01x02 J1
+U 1 1 5B2DF1AC
+P 3200 3350
+F 0 "J1" H 3200 3450 50  0000 C CNN
+F 1 "Battery" H 3200 3150 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Angled_1x02_Pitch2.54mm" H 3200 3350 50  0001 C CNN
+F 3 "" H 3200 3350 50  0001 C CNN
+	1    3200 3350
+	-1   0    0    1   
+$EndComp
+Connection ~ 4400 3250
+$Comp
+L Conn_01x02 J2
+U 1 1 5B2DF723
+P 7400 3000
+F 0 "J2" H 7400 3100 50  0000 C CNN
+F 1 "Unifying" H 7400 2800 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Angled_1x02_Pitch2.54mm" H 7400 3000 50  0001 C CNN
+F 3 "" H 7400 3000 50  0001 C CNN
+	1    7400 3000
+	1    0    0    -1  
+$EndComp
+Connection ~ 6250 3100
+$Comp
+L GND #PWR04
+U 1 1 5B2DF809
+P 6850 3800
+F 0 "#PWR04" H 6850 3550 50  0001 C CNN
+F 1 "GND" H 6850 3650 50  0000 C CNN
+F 2 "" H 6850 3800 50  0001 C CNN
+F 3 "" H 6850 3800 50  0001 C CNN
+	1    6850 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 3000 6850 3000
+Wire Wire Line
+	6850 3000 6850 3800
+Wire Wire Line
+	3750 2800 3750 3250
+Connection ~ 3750 3250
+Wire Wire Line
+	3400 3350 3600 3350
+Wire Wire Line
+	3600 3350 3600 3800
+$Comp
+L Conn_01x01 J4
+U 1 1 5B2E0148
+P 3750 2600
+F 0 "J4" H 3750 2700 50  0000 C CNN
+F 1 "USB+" H 3750 2500 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 3750 2600 50  0001 C CNN
+F 3 "" H 3750 2600 50  0001 C CNN
+	1    3750 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Conn_01x01 J3
+U 1 1 5B2E01DA
+P 3600 4000
+F 0 "J3" H 3600 4100 50  0000 C CNN
+F 1 "USB-" H 3600 3900 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 3600 4000 50  0001 C CNN
+F 3 "" H 3600 4000 50  0001 C CNN
+	1    3600 4000
+	0    1    1    0   
+$EndComp
+$EndSCHEMATC
